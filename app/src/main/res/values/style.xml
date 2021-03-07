@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">?attr/secondaryBgColor</item>
+        <item name="android:textColor">?attr/textColors</item>
+        <item name="dialogCornerRadius">8dp</item>
+        <item name="android:textColorPrimary">?attr/textColors</item>
+    </style>
+</resources>

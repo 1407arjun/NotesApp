@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/primaryBgColor"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="1"
+        android:background="?attr/secondaryBgColor"
+        android:elevation="16dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="center"
+            android:text="My Notes    "
+            android:textColor="?attr/textColors"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/notesListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:divider="@null"
+        android:fadeScrollbars="true"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+
+    </ListView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:alpha="0.85"
+            app:backgroundTint="?attr/secondaryBgColor"
+            app:elevation="16dp"
+            app:fabAlignmentMode="end"
+            app:fabAnimationMode="scale"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu_main" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:textColor="?attr/textColors"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="center" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            app:elevation="12dp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottomAppBar"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="?attr/iconColor" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/notesLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="64dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="198dp"
+            android:alpha="0.8"
+            android:padding="4dp"
+            app:srcCompat="@drawable/notes" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="It's all lonely here...\nAdd your first note using the Add Note button"
+            android:textAlignment="gravity"
+            android:textColor="?attr/hintTextColors"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

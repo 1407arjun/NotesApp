@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="iconColor" format="color"/>
+    <attr name="textColors" format="color"/>
+    <attr name="hintTextColors" format="color"/>
+    <attr name="primaryBgColor" format="color"/>
+    <attr name="secondaryBgColor" format="color"/>
+    <attr name="specialColor" format="color"/>
+</resources>

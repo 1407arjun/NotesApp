@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NotesApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="primaryBgColor">#303030</item>
+        <item name="secondaryBgColor">@color/cardview_dark_background</item>
+        <item name="iconColor">@color/white</item>
+        <item name="textColors">@color/white</item>
+        <item name="hintTextColors">#BEBEBE</item>
+        <item name="specialColor">@color/black</item>
+        <item name="colorOnPrimary">#448AFF</item>
+        <item name="colorSecondary">#0D47A1</item>
+        <item name="colorAccent">#448AFF</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/cardview_dark_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+</resources>
