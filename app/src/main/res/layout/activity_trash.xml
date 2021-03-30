@@ -130,7 +130,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Hurrah! Nothing in Trash"
+            android:text="Hurrah! Nothing in Trash :)"
             android:textAlignment="gravity"
             android:textColor="?attr/hintTextColors"
             android:textSize="20sp" />

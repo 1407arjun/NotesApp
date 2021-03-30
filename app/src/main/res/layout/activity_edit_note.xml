@@ -23,7 +23,7 @@
         app:menu="@menu/bottom_menu"
         app:navigationIcon="@drawable/ic_back"
         app:subtitleTextColor="?attr/hintTextColors"
-        app:title="?attr/textColors"
+        app:title="New note"
         app:titleTextColor="?attr/textColors" />
 
     <EditText
